@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>簡潔な文を書こう</title>
+<style>
+    @page {
+        size: A4 portrait;
+        margin: 10mm 12mm; /* 余白を少し詰めて1枚に収める */
+    }
+
+    body {
+        font-family: "MS 明朝", "Yu Mincho", "Hiragino Mincho ProN", serif;
+        background-color: #f0f0f0;
+        margin: 0; padding: 20px;
+        color: #333; font-size: 10.5pt; line-height: 1.4;
+    }
+
+    .container {
+        width: 90%; max-width: 950px;
+        margin: 0 auto; padding: 25px 35px;
+        background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+
+    /* ヘッダー */
+    .header-info {
+        font-size: 10pt; line-height: 1.4;
+        text-align: right;
+        margin-bottom: 12px; width: 100%; box-sizing: border-box;
+    }
+    .header-info p {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 16pt; text-align: center;
+        border-bottom: 2px solid #333;
+        padding-bottom: 6px; margin-top: 0; margin-bottom: 15px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 13pt; border-left: 5px solid #4a90e2;
+        padding-left: 10px; margin-top: 18px; margin-bottom: 8px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 11pt;
+        margin: 10px 0 4px 0;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    ul {
+        margin: 4px 0 8px 0;
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 2px;
+    }
+
+    .note {
+        font-size: 9pt;
+        color: #666;
+        margin-top: 2px;
+    }
+
+    /* 表現用テーブル */
+    table.expression-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+        font-size: 10.5pt;
+    }
+    table.expression-table th, table.expression-table td {
+        border: 1px solid #999;
+        padding: 8px 12px;
+        vertical-align: top;
+    }
+    table.expression-table th {
+        background-color: #f1f3f5;
+        width: 25%;
+        text-align: left;
+        font-weight: bold;
+    }
+    table.expression-table td {
+        line-height: 1.5;
+    }
+
+    .bad-example {
+        background-color: #fff3cd;
+        padding: 8px 12px;
+        border: 1px solid #ffeeba;
+        border-radius: 4px;
+        margin-top: 5px;
+        font-size: 10.5pt;
+    }
+
+    @media print {
+        body { background-color: #fff; padding: 0; font-size: 10pt; }
+        .container {
+            width: 100%; max-width: 100%;
+            padding: 0; margin: 0;
+            box-shadow: none;
+        }
+        h1 { font-size: 15pt; margin-bottom: 10px; }
+        h2 { font-size: 12pt; margin-top: 15px; margin-bottom: 8px; }
+        h3 { font-size: 10.5pt; margin: 8px 0 4px 0; }
+
+        /* 改ページ制御 */
+        .container, h1, h2, h3, table, .bad-example {
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- ヘッダー -->
+    <div class="header-info">
+        <p>進学2Aクラス　2026/11/19　講師：山根</p>
+        <p>『小論文への12ステップ』4．正しい構造の文（p.45〜60）</p>
+    </div>
+
+    <!-- タイトル -->
+    <h1>簡潔な文を書こう</h1>
+
+    <h2>1. 文を短くして、接続詞でつなごう！</h2>
+
+    <h3>【STEP 1】文を短くする ＝ 一文一義</h3>
+    <ul>
+        <li><strong>一文一義</strong>：一つの文には、一つの情報だけを書く。</li>
+    </ul>
+
+    <h3>【STEP 2】文と文を接続詞でつなげる</h3>
+    <ul>
+        <li>しかし / また / したがって / なぜなら などを使う
+            <div class="note">※次回たくさん学習します</div>
+        </li>
+    </ul>
+
+    <p style="margin: 8px 0 2px 0;">※日本語と中国語では文章の作り方が違う。</p>
+    <ul>
+        <li>中国語：ｘｘｘ，ｘｘｘ，ｘｘｘ，ｘｘｘ。</li>
+        <li>日本語：○○○。（接続詞）、○○○。（接続詞）、○○○。</li>
+    </ul>
+
+    <p style="margin: 8px 0;"><strong>短文＋接続詞のメリット：自分で間違えにくい。読む人にも分かりやすい。</strong></p>
+
+    <h3>よくない文の例（教科書 p.57 より）</h3>
+    <div class="bad-example">
+        日本語の文法は複雑だという人もいるが、どの言語にもそれぞれの文法体系があり、効率よく外国語をマスターする方法は、早くその言葉の特徴をつかむことである。
+    </div>
+
+    <h2>2. 小論文で使いたい表現</h2>
+    <table class="expression-table">
+        <tr>
+            <th>① 原因</th>
+            <td>
+                なぜなら、〜である。<br>
+                〜が原因である。<br>
+                原因は〜である。
+            </td>
+        </tr>
+        <tr>
+            <th>② 例外を上げて反論する</th>
+            <td>
+                しかし、必ずしもそう（とは限らない / ではない）。<br>
+                〜という（例 / 場合 / 意見 / 考え方）もある。
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
